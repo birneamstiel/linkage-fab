@@ -15,12 +15,12 @@ Install all dependencies necessary to run this tool by calling: ```
 ```
 pip install -r requirements.txt
 ```
-(requires python 3)
+(requires python3)
 
 #### Run
 * create svg file for fabrication with:
 ```
-python3 linkage_converter.py -i indepth_assignment_linkages_saxena.slvs -o linkages.svg
+python3 src/linkage_fab.py sample/saxena.slvs --output linkages.svg
 ```
 * this creates two files:
   * `linkages.svg` --> can be sent to laser cutter directly for fabrication, (geometry `red` should be cut, labels in `blue` engraved )
