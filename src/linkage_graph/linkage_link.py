@@ -57,6 +57,13 @@ class LinkageLink:
             transform = self.fabrication_transform @ primitive_transform
             return affinity.affine_transform(Point(self.hub_b.position), utils.matrix_to_shapely(transform))
 
+    def get_label_positions(self, space: ConfigurationSpace, margin=2.5):
+        translated_hub_a_position = affinity.translate(
+            Point(self.get_hub_a_position(space)), margin, margin)
+        translated_hub_b_position = affinity.translate(
+            Point(self.get_hub_b_position(space)), margin, margin)
+        return (translated_hub_a_position, translated_hub_b_position)
+
 
     def as_polygon(self, space=ConfigurationSpace.assembled, linkage_radius=7.5, joint_radius = 1) -> Polygon:
         """Creates a polygon representation of this link.
