@@ -1,0 +1,3 @@
+numpy==1.22.4
+Shapely==1.8.2
+slvstopy @ git+https://github.com/kktse/slvstopy.git@50f14ca36b0ee0d8240939c6689cb18b48a81ccb
