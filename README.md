@@ -1,4 +1,4 @@
-## LinkageFab: Linkage Converter For Fabrication
+# LinkageFab: Linkage Converter For Fabrication
 This tool allows the creation of ready-to-cut linkages from a given linkage configuration. It parses a given linkage, creates a immediate graph representation and generates an output file which can be used for fabricating the linkage.
 
 ![conversion and export process schematic](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/linkage-export-schematic.excalidraw.png)
@@ -9,7 +9,7 @@ The main objective when creating this tool was to have a way of fabricating link
 ### Output
 Currently the only supported output format is a svg cutting plan for creating an easy to produce prototype from e.g. wood (using a laser cutter) or cardboard (using a cutting plotter). See Fabrication section for detailed guidance on how to cut and assemble.
 
-### How to use
+## How to use
 #### Install dependencies
 Install all dependencies necessary to run this tool by calling: ```
 ```
@@ -30,6 +30,7 @@ python3 linkage_converter.py -i indepth_assignment_linkages_saxena.slvs -o linka
 * The exported svg can be cut using a laser cutter or cutting plotter.
 * Different materials can be used, e.g. cardboard or wood. Make sure the picked material is stiff enough for the linkages to stay rigid.
 * The blue letters contained within the cutting layout should be engraved or drawn onto the fabricated linkages to simplify assembly.
+
 ![cutting linkages with a cutting plotter](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/fabrication.gif)
 
 #### Assemble
@@ -40,14 +41,15 @@ python3 linkage_converter.py -i indepth_assignment_linkages_saxena.slvs -o linka
 ![connect cardboard linkages via rivets](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/assemble.jpg)
 
 
-### Examples
+## Example Linkages
 * Parallelogram: a simple linkage system forming a  parallelogram 
-* Mulitplicator Gadget: a linkage modeling [Kempes multiplicator gadget]()
 * Saxena: a sophisticated linkage system as described in [Kempe’s Linkages and the Universality Theorem (by Anupam Saxena)](https://www.ias.ac.in/article/fulltext/reso/016/03/0220-0237)
+* Mulitplicator Gadget: a linkage modeling [Kempes multiplicator gadget]()
 * [Peaucellier Lipkin linkage](https://en.wikipedia.org/wiki/Peaucellier–Lipkin_linkage)
 ![a fabricated Peaucellier Lipkin linkage (made from cardboard)](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/peaucellier_lipkin.jpg)
 
-### Future Work
+
+## Future Work
 * implement angle constraints
 * find a way for modeling fixed hubs/joints
 * svg postprocessing (e.g. remove duplicate paths for hubs)
