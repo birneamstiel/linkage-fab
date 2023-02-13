@@ -44,7 +44,7 @@ python3 src/linkage_fab.py sample/saxena.slvs --output linkages.svg
 ## Example Linkages
 * Parallelogram: a simple linkage system forming a  parallelogram 
 * Saxena: a sophisticated linkage system as described in [Kempe’s Linkages and the Universality Theorem (by Anupam Saxena)](https://www.ias.ac.in/article/fulltext/reso/016/03/0220-0237)
-* Mulitplicator Gadget: a linkage modeling [Kempes multiplicator gadget]()
+* Mulitplicator Gadget: a linkage modeling [Kempes multiplicator gadget](https://en.wikipedia.org/wiki/Kempe%27s_universality_theorem)
 * [Peaucellier Lipkin linkage](https://en.wikipedia.org/wiki/Peaucellier–Lipkin_linkage)
 ![a fabricated Peaucellier Lipkin linkage (made from cardboard)](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/peaucellier_lipkin.jpg)
 
