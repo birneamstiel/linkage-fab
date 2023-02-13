@@ -30,23 +30,27 @@ python3 linkage_converter.py -i indepth_assignment_linkages_saxena.slvs -o linka
 * The exported svg can be cut using a laser cutter or cutting plotter.
 * Different materials can be used, e.g. cardboard or wood. Make sure the picked material is stiff enough for the linkages to stay rigid.
 * The blue letters contained within the cutting layout should be engraved or drawn onto the fabricated linkages to simplify assembly.
-\<gif von fertig zusammgenbautem linkage\>
+![cutting linkages with a cutting plotter](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/fabrication.gif)
 
 #### Assemble
 * Depending on the  material used, pick a suitable method for connecting the linkages.
 * You need to connect the linkages tightly but leave enough freedom to rotate around an axes.
 * Suitable conenction systems could be bolts or rivets (for paper/fabric).
 * The created assembly manual will help identifying matching linkages.
-*
+![connect cardboard linkages via rivets](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/assemble.jpg)
+
 
 ### Examples
 * Parallelogram: a simple linkage system forming a  parallelogram 
 * Mulitplicator Gadget: a linkage modeling [Kempes multiplicator gadget]()
-* Saxena: a sophisticated linkage system taken from [xyz]()
-* 
-### Limitations
-### What is supported
-* ...
-### What is not supported yet
-* angle constraints
-* ...
+* Saxena: a sophisticated linkage system as described in [Kempe’s Linkages and the Universality Theorem (by Anupam Saxena)](https://www.ias.ac.in/article/fulltext/reso/016/03/0220-0237)
+* [Peaucellier Lipkin linkage](https://en.wikipedia.org/wiki/Peaucellier–Lipkin_linkage)
+![a fabricated Peaucellier Lipkin linkage (made from cardboard)](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/peaucellier_lipkin.jpg)
+
+### Future Work
+* implement angle constraints
+* find a way for modeling fixed hubs/joints
+* svg postprocessing (e.g. remove duplicate paths for hubs)
+* extend assembly manual by assembly order
+* come up with temporary assembly aid (for holding linkages in place before connecting finally)
+* take material thickness into account (important for thicker materials, like wood)
