@@ -1,4 +1,4 @@
-## Linkage Converter For Fabrication
+## LinkageFab: Linkage Converter For Fabrication
 This tool allows the creation of ready-to-cut linkages from a given linkage configuration. It parses a given linkage, creates a immediate graph representation and generates an output file which can be used for fabricating the linkage.
 
 ![conversion and export process schematic](https://github.com/birneamstiel/linkage-converter-for-fabrication/raw/master/linkage-export-schematic.excalidraw.png)
